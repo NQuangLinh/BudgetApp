@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f7f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* default */
+/* ===================== */
+
+.wrap {
+  margin: 2rem 5rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #504f50;
+}
+
+/* title */
+/* ====================== */
+
+.display {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.input-budget {
+  border: solid 0.1rem green;
+  border-radius: 4px;
+  width: 30%;
+  height: 10rem;
+  float: left;
+  padding: 1rem;
+}
+
+.input-budget label {
+  text-transform: capitalize;
+
+  font-size: 1rem;
+  color: #504f50;
+}
+
+.input-budget input {
+  margin-top: 1rem;
+  background-color: white;
+  width: 100%;
+  height: 2rem;
+  border: 0.7px solid;
+  border-radius: 2px;
+  color: black;
+  font-size: 0.9rem;
+  padding-left: 0.8rem;
+}
+.input-budget input:hover,
+.input-budget input:active {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.input-budget button {
+  margin-top: 1.2rem;
+  width: 5rem;
+  height: 2rem;
+  border: 0.7px solid green;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: #504f50;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.input-budget button:hover,
+.input-budget button:active {
+  background-color: green;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+/*Form input budget */
+/* ======================== */
+
+.show-amount {
+  float: left;
+  width: 70%;
+}
+
+.show-amount ul {
+  list-style: none;
+  margin-left: 4rem;
+}
+.show-amount ul li {
+  float: left;
+  width: 33%;
+  height: 10rem;
+  text-align: center;
+  align-items: center;
+}
+
+.show-amount ul li span {
+  text-transform: uppercase;
+  color: #504f50;
+  font-weight: bold;
+  font-size: 1.18rem;
+  letter-spacing: 0.1rem;
+}
+
+.show-amount ul li i {
+  display: inline-block;
+  font-size: 3rem;
+  color: #0f628d;
+  margin: 1rem 0;
+}
+
+.show-amount ul li p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+#warning {
+  color: #c5363f;
+}
+
+/* Show amount */
+/* =================== */
+
+.infomation {
+  width: 100%;
+  height: 25rem;
+}
+
+
+.input-expense {
+  border: solid 0.1rem #c5363f;
+  border-radius: 4px;
+  width: 30%;
+  float: left;
+  padding: 1rem;
+  float: left;
+}
+
+.input-expense label {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #504f50;
+}
+
+
+.input-expense input {
+  margin: .5rem 0 1.1rem 0;
+  background-color: white;
+  width: 100%;
+  height: 2rem;
+  border: 0.7px solid;
+  border-radius: 2px;
+  color: black;
+  font-size: 0.9rem;
+  padding-left: 0.8rem;
+}
+
+.input-expense button {
+  padding: 0 .5rem;
+  height: 2rem;
+  border: 0.7px solid #c5363f;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: #504f50;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.input-expense button:hover,
+.input-expense button:active{
+  background-color: #c5363f;
+  color: black;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.input-expense input:hover,
+.input-expense input:active {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* input-expense */
+/* ======================= */
+
+.history{
+  width: 70%;
+  float: left;
+}
+
+.history-content{
+  margin-left: 7rem;
+}
+
+table{
+  width: 100%;
+}
+
+table tr th{
+  width: 33%;
+  letter-spacing: 0.08rem;
+}
+
+table tr{
+  text-align: center;
+  line-height: 1.9rem;
+}
+
+#edit{
+  color: #0f628d;
+  margin-right: .5rem;
+}
+
+table tr td{
+  text-transform: uppercase;
+  color: #c5363f;
+
+}
+
+table tr td i{
+  cursor: pointer;
+}
+
+/* History */
+/* ============ */
+
+.error{
+  border:0;
+  border-radius: 4px;
+  width: 30%;
+  padding-left: 1rem;
+  background-color: #fddcde;
+  margin-bottom: .5rem;
+  padding: 1rem;
+  display: none;
+}
+
+.error.show{
+  display: block;
+}
+.error span{
+  text-transform: capitalize;
+  background-color: #fddcde;
+  font-size: 90%;
+}
+
+
+.footer{
+  margin-bottom: 1rem;
+  text-align: center;
+}

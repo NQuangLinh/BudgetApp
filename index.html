@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Budget App</title>
+  </head>
+  <body onload="load()">
+    <div class="wrap">
+      <!-- title -->
+      <div class="title">
+        <h2>budget app</h2>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Display Hiển thị -->
+        <div class="display">
+          <!-- Form input budget -->
+          <div class="error">
+            <span>value cannot be emtpy or negative</span>
+          </div>
+          <div class="input-budget">
+            <form>
+              <label for="budget">please enter your budget</label>
+              <br />
+              <input type="number" name="budget" />
+              <br />
+              <button class="btn-budget" type="button">Calculate</button>
+            </form>
+          </div>
+
+          <!-- Show amount -->
+          <div class="show-amount">
+            <ul>
+              <li>
+                <span>budget</span>
+                <br />
+                <i class="fas fa-money-bill-alt"></i>
+                <p class="budget">$ 0</p>
+              </li>
+
+              <li>
+                <span>expenses</span>
+                <br />
+                <i class="far fa-credit-card"></i>
+                <p class="expense" id="warning">$ 0</p>
+              </li>
+
+              <li>
+                <span>balance</span>
+                <br />
+                <i class="fas fa-dollar-sign"></i>
+                <p class="balance">$ 0</p>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <!-- Infomation -->
+        <div class="infomation">
+          <!-- Input Expense -->
+          <div class="error">
+              <span>value expense cannot be emtpy or negative</span>
+            </div>
+          <div class="input-expense">
+            <form>
+              <label for="expense">please enter your expense</label>
+              <br />
+              <input type="text" name="expense" />
+              <br />
+              <label for="amount">please enter expense amount</label>
+              <br />
+              <input type="number" name="amount" />
+              <br />
+              <button class="btn-expense" type="button">Add Expense</button>
+            </form>
+          </div>
+
+          <!-- History -->
+
+          <div class="history">
+            <div class="history-content">
+              <table>
+                <tr>
+                  <th>Expense Title</th>
+                  <th>Expense Value</th>
+                  <th></th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="footer">
+      <hr>
+      <br>
+      <span>&copy; Copyright by Nguyen Quang Linh ^^</span>
+    </div>
+    <script src="https://kit.fontawesome.com/4a8cee02c5.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
